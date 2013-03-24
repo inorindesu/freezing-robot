@@ -1,0 +1,36 @@
+This program shows you how to obtain lua functions and data from lua
+scripts when embedding lua scripting enging into a C program.
+
+==USAGE==
+
+To use it, first compile it by using the Makefile, then call the
+program by:
+
+./build/out
+
+which is default output of the Makefile script. (If you don't like
+this name, just change it!)
+
+The program will enter interactive mode after you run it. First it
+asks for an action, which is a lua script. You should enter a path to
+a lua script to satisfy its request.
+
+The program then loads the lua script, and runs the script to obtain
+parameter count (paramCount) and a calculation function (calc).
+
+The program will obtain integer parameters from the users according to
+paramCount. After the program get every parameters, those parameters
+will be used as calc function input, and calc function will be run.
+
+After calculation is done, the result will be returned and printed to
+the screen.
+
+==CUSTOM SCRIPT==
+
+As described above, this program accepts any lua scripts with 2
+globals: paramCount and calc. 'calc' should be a function doing
+calculation, and paramCount should indicate parameter count of calc
+function. Inconsistency will cause error.
+
+To see examples, just look for *.lua scripts in the root directory of
+the source package.
