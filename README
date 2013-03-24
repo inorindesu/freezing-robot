@@ -1,6 +1,23 @@
 This program shows you how to obtain lua functions and data from lua
 scripts when embedding lua scripting enging into a C program.
 
+==REQUIREMENT==
+
+This program requires lua-5.2 to run. If package manager of your
+system did not have it, you should compile your copy or obtain a
+binary package.
+
+Precompiled binary packages of lua can be obtained from:
+
+http://lua-users.org/wiki/LuaBinaries
+
+To compile your lua-5.2 copy, please download your copy of lua-5.2
+from:
+
+http://www.lua.org/download.html
+
+and compile it with Makefile contained in the source tarball.
+
 ==USAGE==
 
 To use it, first compile it by using the Makefile, then call the
